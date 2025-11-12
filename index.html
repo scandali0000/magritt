@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Рене Магритт — Сюрреалистический блок</title>
+  <title>Рене Магритт — сайт презентация</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/img/apple.png" type="image/x-icon">
 
   <style>
     :root {
@@ -79,6 +80,10 @@
       opacity: 0.06;
       background-image: url('data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22120%22 height=%22120%22><filter id=%22n%22 x=%220%22 y=%220%22 width=%22100%25%22 height=%22100%25%22><feTurbulence baseFrequency=%220.9%22 numOctaves=%221%22 stitchTiles=%22stitch%22/></filter><rect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22 opacity=%220.5%22/></svg>');
     }
+
+    body, * {
+  cursor: url('assets/img/curs.png'), auto;
+}
   </style>
 </head>
 
@@ -131,371 +136,386 @@
 
     </div>
   </section>
-<!-- Второй блок -->
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden transition-colors duration-1500 bg-[#f2f0ed]" id="secondBlock">
-  <!-- Grain -->
-  <div class="absolute inset-0 opacity-[0.06] grain"></div>
+  <!-- Второй блок -->
+  <section
+    class="relative min-h-screen flex items-center justify-center overflow-hidden transition-colors duration-1500 bg-[#f2f0ed]"
+    id="secondBlock">
+    <!-- Grain -->
+    <div class="absolute inset-0 opacity-[0.06] grain"></div>
 
-  <div class="container mx-auto px-6 md:px-16 grid md:grid-cols-3 gap-12 items-center z-10">
-    <!-- Текст -->
-    <div class="md:col-span-1 relative z-20">
-      <h2 class="text-[3rem] md:text-[3.5rem] font-black uppercase leading-tight text-[#1a1a1a] mb-4 tracking-tight">
-        <span class="block">Кто такой</span>
-        <span class="font-light italic tracking-wide">Рене</span>
-        <span class="font-medium">Магритт?</span>
-      </h2>
-      <p class="text-[#2e2e2e] text-[1rem] md:text-[1.1rem] max-w-sm leading-relaxed">
-        Рене Магритт — бельгийский художник-сюрреалист XX века. Его миры полны странных объектов и неочевидных связей.
-      </p>
-    </div>
+    <div class="container mx-auto px-6 md:px-16 grid md:grid-cols-3 gap-12 items-center z-10">
+      <!-- Текст -->
+      <div class="md:col-span-1 relative z-20">
+        <h2 class="text-[3rem] md:text-[3.5rem] font-black uppercase leading-tight text-[#1a1a1a] mb-4 tracking-tight">
+          <span class="block">Кто такой</span>
+          <span class="font-light italic tracking-wide">Рене</span>
+          <span class="font-medium">Магритт?</span>
+        </h2>
+        <p class="text-[#2e2e2e] text-[1rem] md:text-[1.1rem] max-w-sm leading-relaxed">
+          Рене Магритт — бельгийский художник-сюрреалист XX века. Его миры полны странных объектов и неочевидных связей.
+        </p>
+      </div>
 
-    <!-- Центральное изображение -->
-    <div class="relative flex justify-center items-center z-20">
-      <div class="relative group overflow-hidden">
-        <img src="assets/img/rene.png" alt="Рене Магритт"
-          class="rounded-none shadow-x0 grayscale hover:grayscale-0 transition duration-700 ease-in-out w-[640px] md:w-[900px] surreal-main" />
-        <img src="assets/img/hat.png" alt="Hat"
-          class="absolute w-[120px] left-1/2 -translate-x-1/2 top-[70px] opacity-0 group-hover:opacity-100 transition-all duration-700 ease-in-out surreal-hat" />
+      <!-- Центральное изображение -->
+      <div class="relative flex justify-center items-center z-20">
+        <div class="relative group overflow-hidden">
+          <img src="assets/img/rene.png" alt="Рене Магритт"
+            class="rounded-none shadow-x0 grayscale hover:grayscale-0 transition duration-700 ease-in-out w-[640px] md:w-[900px] surreal-main" />
+          <img src="assets/img/hat.png" alt="Hat"
+            class="absolute w-[120px] left-1/2 -translate-x-1/2 top-[70px] opacity-0 group-hover:opacity-100 transition-all duration-700 ease-in-out surreal-hat" />
+        </div>
+      </div>
+
+      <!-- Дополнительные объекты -->
+      <div class="md:col-span-1 relative z-20">
+        <h3 class="text-[1.5rem] uppercase font-medium text-[#3b3b3b] tracking-[0.08em] mb-4">«Сокрушающий бутафор»</h3>
+        <p class="text-[#2e2e2e] text-[1rem] leading-relaxed mb-4">
+          Картины Рене Магритта загадочны, но большинство из них невозможно описать одним словом.
+        </p>
+        <div class="flex flex-col gap-4 mt-6">
+          <img src="assets/img/rene1.jpg" alt="Painting 1"
+            class="w-[160px] rounded-none hover:scale-105 transition duration-700 ease-out shadow-md hover:shadow-xl surreal-img" />
+          <img src="assets/img/rene2.jpg" alt="Painting 2"
+            class="w-[160px] rounded-none hover:scale-105 transition duration-700 ease-out shadow-md hover:shadow-xl surreal-img" />
+          <img src="assets/img/rene3.jpg" alt="Painting 3"
+            class="w-[160px] rounded-none hover:scale-105 transition duration-700 ease-out shadow-md hover:shadow-xl surreal-img" />
+        </div>
       </div>
     </div>
 
-    <!-- Дополнительные объекты -->
-    <div class="md:col-span-1 relative z-20">
-      <h3 class="text-[1.5rem] uppercase font-medium text-[#3b3b3b] tracking-[0.08em] mb-4">«Сокрушающий бутафор»</h3>
-      <p class="text-[#2e2e2e] text-[1rem] leading-relaxed mb-4">
-        Картины Рене Магритта загадочны, но большинство из них невозможно описать одним словом.
+    <!-- Сюрреалистический фильтр -->
+    <svg width="0" height="0" style="position:absolute">
+      <filter id="dreamDistort2">
+        <feTurbulence type="fractalNoise" baseFrequency="0.004 0.005" numOctaves="3" seed="8" />
+        <feDisplacementMap in="SourceGraphic" scale="12" />
+      </filter>
+    </svg>
+  </section>
+
+
+  <section id="interactiveMagritte"
+    class="relative min-h-screen overflow-hidden bg-[#0a0a0a] text-white flex flex-col items-center justify-center">
+
+    <!-- Фон: туман + звёзды -->
+    <canvas id="particlesCanvasMagritte" class="absolute inset-0"></canvas>
+    <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] opacity-80"></div>
+
+    <!-- Плавающие объекты -->
+    <img src="assets/img/pigeon.png" id="appleObj" class="obj absolute w-80 opacity-90" style="top:15%; left:30%;">
+    <img src="assets/img/pigeon.png" id="hatObj" class="obj absolute w-36 opacity-90" style="top:60%; left:50%;">
+    <img src="assets/img/pigeon.png" id="cloudObj" class="obj absolute w-100 opacity-70" style="top:40%; right:60%;">
+
+    <!-- Контент -->
+    <div class="relative z-20 text-center max-w-5xl px-6">
+      <h2 id="magritteTitle" class="text-6xl font-black uppercase mb-4">Узнаваемые произведения Рене Магритта</h2>
+      <p id="magritteDesc" class="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
+        Погрузитесь в мир, где яблоки висят в воздухе, шляпы летят, а картины оживают. Исследуйте работы Магритта
+        интерактивно.
       </p>
-      <div class="flex flex-col gap-4 mt-6">
-        <img src="assets/img/rene1.jpg" alt="Painting 1"
-          class="w-[160px] rounded-none hover:scale-105 transition duration-700 ease-out shadow-md hover:shadow-xl surreal-img" />
-        <img src="assets/img/rene2.jpg" alt="Painting 2"
-          class="w-[160px] rounded-none hover:scale-105 transition duration-700 ease-out shadow-md hover:shadow-xl surreal-img" />
-        <img src="assets/img/rene3.jpg" alt="Painting 3"
-          class="w-[160px] rounded-none hover:scale-105 transition duration-700 ease-out shadow-md hover:shadow-xl surreal-img" />
-      </div>
     </div>
-  </div>
 
-  <!-- Сюрреалистический фильтр -->
-  <svg width="0" height="0" style="position:absolute">
-    <filter id="dreamDistort2">
-      <feTurbulence type="fractalNoise" baseFrequency="0.004 0.005" numOctaves="3" seed="8"/>
-      <feDisplacementMap in="SourceGraphic" scale="12"/>
-    </filter>
-  </svg>
-</section>
+    <!-- Галерея картин -->
+    <div class="relative z-20 mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 px-6">
+      <img src="assets/img/pic1.png"
+        class="magrittePainting w-full cursor-pointer transition-transform duration-500 md:px-16 ease-in-out hover:scale-110 hover:brightness-125" />
+      <img src="assets/img/pic2.png"
+        class="magrittePainting w-full cursor-pointer transition-transform duration-500 md:px-16 ease-in-out hover:scale-110 hover:brightness-125" />
+      <img src="assets/img/pic3.png"
+        class="magrittePainting w-full cursor-pointer transition-transform duration-500 md:px-16 ease-in-out hover:scale-110 hover:brightness-125" />
+      <img src="assets/img/pic4.png"
+        class="magrittePainting w-full cursor-pointer transition-transform duration-100 md:px-16 ease-in-out hover:scale-110 hover:brightness-125" />
+    </div>
 
+  </section>
+  <section id="magrittePhilosophyBlock"
+    class="relative min-h-screen overflow-hidden bg-[#800020] text-white px-6 md:px-20 flex items-center justify-center">
 
-<section id="interactiveMagritte" class="relative min-h-screen overflow-hidden bg-[#0a0a0a] text-white flex flex-col items-center justify-center">
+    <!-- Центральная картина Магритта -->
+    <div class="relative z-20 flex justify-center w-full">
+      <img src="assets/img/b1.png" alt="Картина Магритта" class="w-full md:w-2/5 object-contain shadow-0g" />
+    </div>
 
-  <!-- Фон: туман + звёзды -->
-  <canvas id="particlesCanvasMagritte" class="absolute inset-0"></canvas>
-  <div class="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] to-[#1a1a1a] opacity-80"></div>
+    <!-- Текст слева -->
+    <div
+      class="absolute top-10 left-20 max-w-xs md:max-w-sm text-[1rem] md:text-[1.3rem] leading-relaxed space-y-6 fade-slide-left">
+      <h1 style="font-weight: bold; font-size: 40px;">Философия Магритта</h1>
+      <p>Рене Магритт стремился разрушить привычное восприятие реальности. Его картины показывают, что объекты не всегда
+        таковы, какими кажутся.</p>
+      <p>Он исследовал парадокс между объектом и его названием — например, знаменитая «Это не трубка» демонстрирует, что
+        изображение предмета не равно самому предмету.</p>
+      <p>Магритт любил ставить зрителя в ситуацию сомнения, где обыденное превращается в загадку.</p>
+      <p>Каждая деталь, каждый объект, помещённый в неожиданное окружение, заставляет задуматься о смысле и иллюзии.</p>
+    </div>
 
-  <!-- Плавающие объекты -->
-  <img src="assets/img/pigeon.png" id="appleObj" class="obj absolute w-80 opacity-90" style="top:15%; left:30%;">
-  <img src="assets/img/pigeon.png" id="hatObj" class="obj absolute w-36 opacity-90" style="top:60%; left:50%;">
-  <img src="assets/img/pigeon.png" id="cloudObj" class="obj absolute w-100 opacity-70" style="top:40%; right:60%;">
+    <!-- Текст справа -->
+    <div
+      class="absolute bottom-8 right-20 max-w-xs md:max-w-sm text-[1rem] md:text-[1.3rem] leading-relaxed space-y-6 fade-slide-right">
+      <p>Для Магритта картина — это мысленное пространство, где зритель вынужден задуматься о природе восприятия.
+        Предметы, помещённые в необычную среду, приобретают новые значения.</p>
+      <p>Философия его искусства заключается в создании визуальной загадки, где реальность и иллюзия пересекаются.
+        Магритт приглашает видеть обычное по-новому.</p>
+      <p>Он словно говорит: «Не ищи простых ответов, наслаждайся странностью мира». Каждая работа — философский
+        эксперимент.</p>
+    </div>
 
-  <!-- Контент -->
-  <div class="relative z-20 text-center max-w-5xl px-6">
-    <h2 id="magritteTitle" class="text-6xl font-black uppercase mb-4">Узнаваемые произведения Рене Магритта</h2>
-    <p id="magritteDesc" class="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed">
-      Погрузитесь в мир, где яблоки висят в воздухе, шляпы летят, а картины оживают. Исследуйте работы Магритта интерактивно.
-    </p>
-  </div>
-
-  <!-- Галерея картин -->
-  <div class="relative z-20 mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 px-6">
-    <img src="assets/img/pic1.png" class="magrittePainting w-full cursor-pointer transition-transform duration-500 md:px-16 ease-in-out hover:scale-110 hover:brightness-125" />
-    <img src="assets/img/pic2.png" class="magrittePainting w-full cursor-pointer transition-transform duration-500 md:px-16 ease-in-out hover:scale-110 hover:brightness-125" />
-    <img src="assets/img/pic3.png" class="magrittePainting w-full cursor-pointer transition-transform duration-500 md:px-16 ease-in-out hover:scale-110 hover:brightness-125" />
-    <img src="assets/img/pic4.png" class="magrittePainting w-full cursor-pointer transition-transform duration-100 md:px-16 ease-in-out hover:scale-110 hover:brightness-125" />
-  </div>
-
-</section><section id="magrittePhilosophyBlock" class="relative min-h-screen overflow-hidden bg-[#800020] text-white px-6 md:px-20 flex items-center justify-center">
-
-  <!-- Центральная картина Магритта -->
-  <div class="relative z-20 flex justify-center w-full">
-    <img src="assets/img/b1.png" alt="Картина Магритта" 
-         class="w-full md:w-2/5 object-contain shadow-0g" />
-  </div>
-
-  <!-- Текст слева -->
-  <div class="absolute top-10 left-20 max-w-xs md:max-w-sm text-[1rem] md:text-[1.3rem] leading-relaxed space-y-6 fade-slide-left">
-    <h1 style="font-weight: bold; font-size: 40px;">Философия Магритта</h1>
-    <p>Рене Магритт стремился разрушить привычное восприятие реальности. Его картины показывают, что объекты не всегда таковы, какими кажутся.</p>
-    <p>Он исследовал парадокс между объектом и его названием — например, знаменитая «Это не трубка» демонстрирует, что изображение предмета не равно самому предмету.</p>
-    <p>Магритт любил ставить зрителя в ситуацию сомнения, где обыденное превращается в загадку.</p>
-    <p>Каждая деталь, каждый объект, помещённый в неожиданное окружение, заставляет задуматься о смысле и иллюзии.</p>
-  </div>
-
-  <!-- Текст справа -->
-  <div class="absolute bottom-8 right-20 max-w-xs md:max-w-sm text-[1rem] md:text-[1.3rem] leading-relaxed space-y-6 fade-slide-right">
-    <p>Для Магритта картина — это мысленное пространство, где зритель вынужден задуматься о природе восприятия. Предметы, помещённые в необычную среду, приобретают новые значения.</p>
-    <p>Философия его искусства заключается в создании визуальной загадки, где реальность и иллюзия пересекаются. Магритт приглашает видеть обычное по-новому.</p>
-    <p>Он словно говорит: «Не ищи простых ответов, наслаждайся странностью мира». Каждая работа — философский эксперимент.</p>
-  </div>
-
-  <!-- Анимированное яблоко -->
+    <!-- Анимированное яблоко -->
 
 
-</section>
+  </section>
 
 
-<section id="eyeScene" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-  <!-- Задний слой: сменяющиеся изображения -->
-  <div id="eyeBackground" class="absolute inset-0 flex items-center justify-center overflow-hidden">
-    <img id="bgImage"
-         src="assets/img/pic7.png"
-         class="object-cover opacity-100 transition-opacity duration-1000 rounded-full w-[90vmin] h-[90vmin] blur-[1px]" />
-  </div>
+  <section id="eyeScene" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
+    <!-- Задний слой: сменяющиеся изображения -->
+    <div id="eyeBackground" class="absolute inset-0 flex items-center justify-center overflow-hidden">
+      <img id="bgImage" src="assets/img/pic7.png"
+        class="object-cover opacity-100 transition-opacity duration-1000 rounded-full w-[90vmin] h-[90vmin] blur-[1px]" />
+    </div>
 
-  <!-- Изображение глаза с вырезанной радужкой -->
-  <div class="relative z-10 w-full h-full pointer-events-none">
-    <img src="assets/img/eyemag.png" alt="Eye mask" class="w-full h-full object-cover" />
-  </div>
+    <!-- Изображение глаза с вырезанной радужкой -->
+    <div class="relative z-10 w-full h-full pointer-events-none">
+      <img src="assets/img/eyemag.png" alt="Eye mask" class="w-full h-full object-cover" />
+    </div>
 
-  <!-- Зрачок -->
-  <div id="pupil"
-       class="absolute z-20 w-[19vmin] h-[19vmin] bg-black rounded-full shadow-[0_0_30px_rgba(0,0,0,0.8)]"></div>
+    <!-- Зрачок -->
+    <div id="pupil" class="absolute z-20 w-[19vmin] h-[19vmin] bg-black rounded-full shadow-[0_0_30px_rgba(0,0,0,0.8)]">
+    </div>
 
-  <!-- Подпись -->
-  <h2 class="absolute bottom-40 text-4xl md:text-6xl font-bold text-white uppercase tracking-widest z-30">
-    Око Магритта
-  </h2>
-</section>
+    <!-- Подпись -->
+    <h2 class="absolute bottom-40 text-4xl md:text-6xl font-bold text-white uppercase tracking-widest z-30">
+      Око Магритта
+    </h2>
+  </section>
 
-<script>
-  const pupil = document.getElementById("pupil");
-  const bgImage = document.getElementById("bgImage");
+  <script>
+    const pupil = document.getElementById("pupil");
+    const bgImage = document.getElementById("bgImage");
 
-  // Смена фоновых изображений внутри радужки
-  const bgImages = [
-    "assets/img/pic5.png",
-    "assets/img/pic6.png",
-    "assets/img/pic3.png",
-    "assets/img/pic4.png",
-    "assets/img/pic1.png",
-    "assets/img/pic2.png"
-  ];
+    // Смена фоновых изображений внутри радужки
+    const bgImages = [
+      "assets/img/pic5.png",
+      "assets/img/pic6.png",
+      "assets/img/pic3.png",
+      "assets/img/pic4.png",
+      "assets/img/pic1.png",
+      "assets/img/pic2.png"
+    ];
 
-  let current = 0;
-  setInterval(() => {
-    current = (current + 1) % bgImages.length;
-    bgImage.style.opacity = 0;
-    setTimeout(() => {
-      bgImage.src = bgImages[current];
-      bgImage.style.opacity = 1;
-    }, 800);
-  }, 2000);
+    let current = 0;
+    setInterval(() => {
+      current = (current + 1) % bgImages.length;
+      bgImage.style.opacity = 0;
+      setTimeout(() => {
+        bgImage.src = bgImages[current];
+        bgImage.style.opacity = 1;
+      }, 800);
+    }, 2000);
 
-  // Движение зрачка за курсором
-  document.addEventListener("mousemove", (e) => {
-    const x = (e.clientX / window.innerWidth - 0.5) * 130;
-    const y = (e.clientY / window.innerHeight - 0.5) * 130;
-    gsap.to(pupil, { x, y, duration: 0.4, ease: "power2.out" });
-  });
-
-  // Эффект лёгкого дыхания
-  gsap.to("#pupil", {
-    scale: 1.1,
-    duration: 3,
-    repeat: -1,
-    yoyo: true,
-    ease: "sine.inOut"
-  });
-</script>
-
-<script>
-  
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Параллакс текста и яблока при движении мыши
-  document.addEventListener('mousemove', e => {
-    const x = (e.clientX / window.innerWidth - 0.5) * 25;
-    const y = (e.clientY / window.innerHeight - 0.5) * 25;
-    gsap.to("#magrittePhilosophyBlock .fade-slide-left", { x: x/3, y: y/3, duration: 1.2, ease: "power2.out" });
-    gsap.to("#magrittePhilosophyBlock .fade-slide-right", { x: x/4, y: y/4, duration: 1.2, ease: "power2.out" });
-    gsap.to("#appleStatic", { x: x/6, y: y/6, rotation: x/10, duration: 1.2, ease: "power2.out" });
-  });
-
-  // Анимация появления текста при скролле
-  gsap.utils.toArray(".fade-slide-left").forEach((el, i) => {
-    gsap.from(el, {
-      scrollTrigger: {
-        trigger: "#magrittePhilosophyBlock",
-        start: "top 90%",
-        end: "top 60%",
-        scrub: true
-      },
-      opacity: 0,
-      x: -50,
-      y: 20,
-      duration: 1.5,
-      delay: i*0.2,
-      ease: "power3.out"
+    // Движение зрачка за курсором
+    document.addEventListener("mousemove", (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 130;
+      const y = (e.clientY / window.innerHeight - 0.5) * 130;
+      gsap.to(pupil, { x, y, duration: 0.4, ease: "power2.out" });
     });
-  });
 
-  gsap.utils.toArray(".fade-slide-right").forEach((el, i) => {
-    gsap.from(el, {
-      scrollTrigger: {
-        trigger: "#magrittePhilosophyBlock",
-        start: "top 90%",
-        end: "top 60%",
-        scrub: true
-      },
-      opacity: 0,
-      x: 50,
-      y: 20,
-      duration: 1.5,
-      delay: i*0.2,
-      ease: "power3.out"
-    });
-  });
-
-  // Яблоко слегка колеблется
-  gsap.to("#appleStatic", {
-    y: "+=15",
-    rotation: 10,
-    duration: 3,
-    ease: "sine.inOut",
-    repeat: -1,
-    yoyo: true
-  });
-</script>
-
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Анимация плавающих объектов
-  gsap.to("#appleObj", { y: 50, rotation: 15, scale: 1.1, duration: 6, repeat: -1, yoyo: true, ease: "sine.inOut" });
-  gsap.to("#hatObj", { x: 40, rotation: -10, scale: 1.05, duration: 8, repeat: -1, yoyo: true, ease: "sine.inOut" });
-  gsap.to("#cloudObj", { x: -120, y: -30, opacity: 0.6, scale: 1.2, duration: 12, repeat: -1, yoyo: true, ease: "sine.inOut" });
-
-  // Параллакс объектов при движении мыши
-  document.addEventListener('mousemove', e => {
-    const x = (e.clientX / window.innerWidth - 0.5) * 30;
-    const y = (e.clientY / window.innerHeight - 0.5) * 30;
-    gsap.to(".obj", { x: x, y: y, duration: 1.2, ease: "power2.out" });
-  });
-
-  // Появление текста при скролле
-  gsap.from("#magritteTitle", {
-    scrollTrigger: { trigger: "#interactiveMagritte", start: "top 80%", end: "top 50%", scrub: true },
-    y: 200, rotation: 5, opacity: 0, scale: 0.8, ease: "power3.out"
-  });
-  gsap.from("#magritteDesc", {
-    scrollTrigger: { trigger: "#interactiveMagritte", start: "top 80%", end: "top 50%", scrub: true },
-    y: 100, opacity: 0, ease: "power3.out"
-  });
-
-  // Частицы
-  const canvas = document.getElementById("particlesCanvasMagritte");
-  const ctx = canvas.getContext("2d");
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-
-  const particles = [];
-  for (let i = 0; i < 150; i++) {
-    particles.push({
-      x: Math.random() * canvas.width,
-      y: Math.random() * canvas.height,
-      size: Math.random() * 3 + 1,
-      speed: Math.random() * 0.5 + 0.2,
-      opacity: Math.random() * 0.5 + 0.1
-    });
-  }
-
-  function animateParticles() {
-    ctx.clearRect(0,0,canvas.width,canvas.height);
-    particles.forEach(p => {
-      p.y -= p.speed;
-      if(p.y < 0) p.y = canvas.height;
-      ctx.fillStyle = `rgba(255,255,255,${p.opacity})`;
-      ctx.beginPath();
-      ctx.arc(p.x,p.y,p.size,0,Math.PI*2);
-      ctx.fill();
-    });
-    requestAnimationFrame(animateParticles);
-  }
-  animateParticles();
-
-  window.addEventListener('resize', () => {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-  });
-
-  // Hover эффекты для картин: небольшие колебания и glow
-  gsap.utils.toArray(".magrittePainting").forEach(img => {
-    img.addEventListener("mouseenter", () => {
-      gsap.to(img, { rotation: Math.random() * 4 - 2, duration: 0.3, ease: "sine.inOut" });
-      gsap.to(img, { scale: 1.12, duration: 0.3 });
-    });
-    img.addEventListener("mouseleave", () => {
-      gsap.to(img, { rotation: 0, scale: 1, duration: 0.3 });
-    });
-  });
-</script>
-
-<script>
-  // Плавный переход фона между блоками
-  gsap.to("#secondBlock", {
-    backgroundColor: "#gjjnb",
-    scrollTrigger: {
-      trigger: "#secondBlock",
-      start: "top bottom",
-      end: "top top",
-      scrub: true
-    }
-  });
-
-  // Анимация главного изображения (левитация, покачивание)
-  gsap.to(".surreal-main", {
-    y: 30,
-    rotation: 3,
-    scale: 1.02,
-    duration: 5,
-    ease: "sine.inOut",
-    repeat: -1,
-    yoyo: true
-  });
-
-  // Анимация шляпы (хаотично)
-  gsap.to(".surreal-hat", {
-    y: -15,
-    rotation: () => Math.random() * 10 - 8,
-    x: () => Math.random() * 10 - 8,
-    duration: 8,
-    repeat: -1,
-    yoyo: true,
-    ease: "sine.inOut"
-  });
-
-  // Плавающие мини-изображения справа (Painting)
-  gsap.utils.toArray(".surreal-img").forEach((img, i) => {
-    gsap.to(img, {
-      y: () => Math.random() * 15 - 7,
-      rotation: () => Math.random() * 10 - 5,
-      duration: 3 + i,
+    // Эффект лёгкого дыхания
+    gsap.to("#pupil", {
+      scale: 1.1,
+      duration: 3,
       repeat: -1,
       yoyo: true,
       ease: "sine.inOut"
     });
-  });
+  </script>
 
-  // Псевдопараллакс при скролле для объектов
-  document.addEventListener('mousemove', e => {
-    const x = (e.clientX / window.innerWidth - 0.5) * 20;
-    const y = (e.clientY / window.innerHeight - 0.5) * 20;
-    gsap.to(".surreal-main, .surreal-hat, .surreal-img", { x, y, duration: 1.2, ease: "power2.out" });
-  });
+  <script>
 
-  // Применяем фильтр "сновидческое искажение"
-  gsap.to(".surreal-main", { filter: "url(#dreamDistort2)", duration: 0, repeat: -1 });
-  gsap.to(".surreal-img", { filter: "url(#dreamDistort2)", duration: 0, repeat: -1 });
-</script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Параллакс текста и яблока при движении мыши
+    document.addEventListener('mousemove', e => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 25;
+      const y = (e.clientY / window.innerHeight - 0.5) * 25;
+      gsap.to("#magrittePhilosophyBlock .fade-slide-left", { x: x / 3, y: y / 3, duration: 1.2, ease: "power2.out" });
+      gsap.to("#magrittePhilosophyBlock .fade-slide-right", { x: x / 4, y: y / 4, duration: 1.2, ease: "power2.out" });
+      gsap.to("#appleStatic", { x: x / 6, y: y / 6, rotation: x / 10, duration: 1.2, ease: "power2.out" });
+    });
+
+    // Анимация появления текста при скролле
+    gsap.utils.toArray(".fade-slide-left").forEach((el, i) => {
+      gsap.from(el, {
+        scrollTrigger: {
+          trigger: "#magrittePhilosophyBlock",
+          start: "top 90%",
+          end: "top 60%",
+          scrub: true
+        },
+        opacity: 0,
+        x: -50,
+        y: 20,
+        duration: 1.5,
+        delay: i * 0.2,
+        ease: "power3.out"
+      });
+    });
+
+    gsap.utils.toArray(".fade-slide-right").forEach((el, i) => {
+      gsap.from(el, {
+        scrollTrigger: {
+          trigger: "#magrittePhilosophyBlock",
+          start: "top 90%",
+          end: "top 60%",
+          scrub: true
+        },
+        opacity: 0,
+        x: 50,
+        y: 20,
+        duration: 1.5,
+        delay: i * 0.2,
+        ease: "power3.out"
+      });
+    });
+
+    // Яблоко слегка колеблется
+    gsap.to("#appleStatic", {
+      y: "+=15",
+      rotation: 10,
+      duration: 3,
+      ease: "sine.inOut",
+      repeat: -1,
+      yoyo: true
+    });
+  </script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Анимация плавающих объектов
+    gsap.to("#appleObj", { y: 50, rotation: 15, scale: 1.1, duration: 6, repeat: -1, yoyo: true, ease: "sine.inOut" });
+    gsap.to("#hatObj", { x: 40, rotation: -10, scale: 1.05, duration: 8, repeat: -1, yoyo: true, ease: "sine.inOut" });
+    gsap.to("#cloudObj", { x: -120, y: -30, opacity: 0.6, scale: 1.2, duration: 12, repeat: -1, yoyo: true, ease: "sine.inOut" });
+
+    // Параллакс объектов при движении мыши
+    document.addEventListener('mousemove', e => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 30;
+      const y = (e.clientY / window.innerHeight - 0.5) * 30;
+      gsap.to(".obj", { x: x, y: y, duration: 1.2, ease: "power2.out" });
+    });
+
+    // Появление текста при скролле
+    gsap.from("#magritteTitle", {
+      scrollTrigger: { trigger: "#interactiveMagritte", start: "top 80%", end: "top 50%", scrub: true },
+      y: 200, rotation: 5, opacity: 0, scale: 0.8, ease: "power3.out"
+    });
+    gsap.from("#magritteDesc", {
+      scrollTrigger: { trigger: "#interactiveMagritte", start: "top 80%", end: "top 50%", scrub: true },
+      y: 100, opacity: 0, ease: "power3.out"
+    });
+
+    // Частицы
+    const canvas = document.getElementById("particlesCanvasMagritte");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const particles = [];
+    for (let i = 0; i < 150; i++) {
+      particles.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        size: Math.random() * 3 + 1,
+        speed: Math.random() * 0.5 + 0.2,
+        opacity: Math.random() * 0.5 + 0.1
+      });
+    }
+
+    function animateParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        p.y -= p.speed;
+        if (p.y < 0) p.y = canvas.height;
+        ctx.fillStyle = `rgba(255,255,255,${p.opacity})`;
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+        ctx.fill();
+      });
+      requestAnimationFrame(animateParticles);
+    }
+    animateParticles();
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+
+    // Hover эффекты для картин: небольшие колебания и glow
+    gsap.utils.toArray(".magrittePainting").forEach(img => {
+      img.addEventListener("mouseenter", () => {
+        gsap.to(img, { rotation: Math.random() * 4 - 2, duration: 0.3, ease: "sine.inOut" });
+        gsap.to(img, { scale: 1.12, duration: 0.3 });
+      });
+      img.addEventListener("mouseleave", () => {
+        gsap.to(img, { rotation: 0, scale: 1, duration: 0.3 });
+      });
+    });
+  </script>
+
+  <script>
+    // Плавный переход фона между блоками
+    gsap.to("#secondBlock", {
+      backgroundColor: "#gjjnb",
+      scrollTrigger: {
+        trigger: "#secondBlock",
+        start: "top bottom",
+        end: "top top",
+        scrub: true
+      }
+    });
+
+    // Анимация главного изображения (левитация, покачивание)
+    gsap.to(".surreal-main", {
+      y: 30,
+      rotation: 3,
+      scale: 1.02,
+      duration: 5,
+      ease: "sine.inOut",
+      repeat: -1,
+      yoyo: true
+    });
+
+    // Анимация шляпы (хаотично)
+    gsap.to(".surreal-hat", {
+      y: -15,
+      rotation: () => Math.random() * 10 - 8,
+      x: () => Math.random() * 10 - 8,
+      duration: 8,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut"
+    });
+
+    // Плавающие мини-изображения справа (Painting)
+    gsap.utils.toArray(".surreal-img").forEach((img, i) => {
+      gsap.to(img, {
+        y: () => Math.random() * 15 - 7,
+        rotation: () => Math.random() * 10 - 5,
+        duration: 3 + i,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut"
+      });
+    });
+
+    // Псевдопараллакс при скролле для объектов
+    document.addEventListener('mousemove', e => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 20;
+      const y = (e.clientY / window.innerHeight - 0.5) * 20;
+      gsap.to(".surreal-main, .surreal-hat, .surreal-img", { x, y, duration: 1.2, ease: "power2.out" });
+    });
+
+    // Применяем фильтр "сновидческое искажение"
+    gsap.to(".surreal-main", { filter: "url(#dreamDistort2)", duration: 0, repeat: -1 });
+    gsap.to(".surreal-img", { filter: "url(#dreamDistort2)", duration: 0, repeat: -1 });
+  </script>
 
   <!-- Скрипты анимации -->
   <script>
@@ -578,38 +598,38 @@
     });
 
     // Падающее яблоко при скролле (не исчезает)
-   // Падающее яблоко хаотично
-// Падающее хаотично яблоко
+    // Падающее яблоко хаотично
+    // Падающее хаотично яблоко
 
-gsap.to("#fallApple", {
-  y: () => document.body.scrollHeight - window.innerHeight - 20, // до низа страницы
-  rotation: () => Math.random() * 1080 + 360, // хаотичное вращение
-  ease: "none",
-  scrollTrigger: {
-    trigger: "body",
-    start: "top top",
-    end: () => document.body.scrollHeight - window.innerHeight,
-    scrub: true
-  },
-  modifiers: {
-    x: gsap.utils.unitize(x => {
-      // плавные зигзаги по X
-      const t = ScrollTrigger.scroll();
-      return parseFloat(x) + Math.sin(t / 150) * 50 + (Math.random() * 4 - 2);
-    }),
-    y: gsap.utils.unitize(y => {
-      // небольшие подпрыгивания по Y
-      return parseFloat(y) + Math.sin(Date.now() / 200) * 30;
-    }),
-    rotation: gsap.utils.unitize(r => {
-      // дополнительное хаотичное вращение
-      return parseFloat(r) + Math.sin(Date.now() / 300) * 15;
-    })
-  }
-});
+    gsap.to("#fallApple", {
+      y: () => document.body.scrollHeight - window.innerHeight - 20, // до низа страницы
+      rotation: () => Math.random() * 1080 + 360, // хаотичное вращение
+      ease: "none",
+      scrollTrigger: {
+        trigger: "body",
+        start: "top top",
+        end: () => document.body.scrollHeight - window.innerHeight,
+        scrub: true
+      },
+      modifiers: {
+        x: gsap.utils.unitize(x => {
+          // плавные зигзаги по X
+          const t = ScrollTrigger.scroll();
+          return parseFloat(x) + Math.sin(t / 150) * 50 + (Math.random() * 4 - 2);
+        }),
+        y: gsap.utils.unitize(y => {
+          // небольшие подпрыгивания по Y
+          return parseFloat(y) + Math.sin(Date.now() / 200) * 30;
+        }),
+        rotation: gsap.utils.unitize(r => {
+          // дополнительное хаотичное вращение
+          return parseFloat(r) + Math.sin(Date.now() / 300) * 15;
+        })
+      }
+    });
 
   </script>
-  
+
 </body>
 
 </html>
